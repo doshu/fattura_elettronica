@@ -1,5 +1,5 @@
 {
-    "name": "inoma/fattura_pr",
+    "name": "inoma/fattura_elettronica",
     "description": "modulo per la creazione semplificata di un xml per fatturazione elettronica tra privati",
     "type": "library",
     "authors": [
