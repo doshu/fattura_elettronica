@@ -7,8 +7,6 @@
 
     class DatiTrasmissione extends Element {
 
-        public const FORMATO_TRASMISSIONE = 'FPR12';
-
         protected $_name = "DatiTrasmissione";
 
         protected $_children = [
@@ -20,10 +18,10 @@
             'PECDestinatario',
         ];
         
-        public function __construct(IdTrasmittente $idTrasmittente, $progressivoInvio, $codiceDestinatario) {
+        public function __construct(IdTrasmittente $idTrasmittente, $progressivoInvio, $formatoTrasmissione, $codiceDestinatario) {
             $this->setIdTrasmittente($idTrasmittente);
             $this->setProgressivoInvio($progressivoInvio);
-            $this->setFormatoTrasmissione(static::FORMATO_TRASMISSIONE);
+            $this->setFormatoTrasmissione($formatoTrasmissione);
             $this->setCodiceDestinatario($codiceDestinatario);
         }
 

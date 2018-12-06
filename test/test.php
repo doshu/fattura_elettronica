@@ -9,7 +9,8 @@
     $datiTrasmissione = new FatturaElettronicaPR\Elements\DatiTrasmissione(
         new FatturaElettronicaPR\Elements\IdTrasmittente('IT', '00000'),
         1,
-        '0000000'
+        FatturaElettronicaPR::FORMATO_TRASMISSIONE
+        FatturaElettronicaPR::DEFAULT_CODICE_DESTINATARIO
     );
     $datiTrasmissione
         ->setContattiTrasmittente(

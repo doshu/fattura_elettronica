@@ -5,6 +5,9 @@
     use Doctrine\Common\Annotations\AnnotationRegistry;
 
     class FatturaElettronicaPR extends Element {
+    
+        public const FORMATO_TRASMISSIONE = 'FPR12';
+        public const DEFAULT_CODICE_DESTINATARIO = '000000';
 
         protected $_header = null;
         protected $_body = null;
