@@ -7,6 +7,12 @@
     class DatiPagamento extends Element {
 
         protected $_name = "DatiPagamento";
+        
+        public const TIPO_PAGAMENTO_A_RATE = "TP01";
+        
+        public const TIPO_PAGAMENTO_COMPLETO = "TP02";
+        
+        public const TIPO_ANTICIPO = "TP03";
 
         protected $_children = [
             'condizioniPagamento',

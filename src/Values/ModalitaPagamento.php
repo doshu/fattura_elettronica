@@ -24,7 +24,7 @@
         
         public const RID_UTENZE = "MP10";
         
-        public const RIDE_VELOCE = "MP11";
+        public const RID_VELOCE = "MP11";
         
         public const RIBA = "MP12";
         

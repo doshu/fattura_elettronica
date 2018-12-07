@@ -8,6 +8,14 @@
     class DettaglioLinee extends Element {
 
         protected $_name = "DettaglioLinee";
+        
+        public const TIPO_SCONTO = "SC";
+        
+        public const TIPO_PREMIO = "PR";
+        
+        public const TIPO_ABBUONO = "AB";
+        
+        public const TIPO_SPESA_ACCESSORIA = "AC";
 
         protected $_children = [
             'numeroLinea',
