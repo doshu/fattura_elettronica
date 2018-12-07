@@ -3,6 +3,7 @@
     namespace Inoma\FatturaElettronicaPR\Elements;
 
     use Inoma\FatturaElettronicaPR\Element;
+    use Inoma\FatturaElettronicaPR\Annotations\Filter;
 
     class CodiceArticolo extends Element {
 
