@@ -11,11 +11,11 @@
 
         protected $_children = [
             'indirizzo',
+            'numeroCivico',
             'CAP',
             'comune',
-            'nazione',
-            'numeroCivico',
             'provincia',
+            'nazione',
         ];
 
         public function __construct($indirizzo, $cap, $comune, $nazione) {
