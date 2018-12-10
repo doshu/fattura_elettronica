@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "cakephp/utility": "^3.6",
+        "cakephp/utility": "3.*",
         "doctrine/annotations": "^1.6"
     },
     "autoload": {
