@@ -135,8 +135,7 @@
             $idFiscaleInvianteCodice = $this->_header->getDatiTrasmissione()
                 ->getIdTrasmittente()
                 ->getIdCodice();
-            $progressivoInvio = $this->_header->getDatiTrasmissione()
-                ->getProgressivoInvio();
+            $progressivoInvio = $this->_body->getDatiGenerali()->getDatiGeneraliDocumento()->getNumero();
             
             return $idFiscaleInviantePaese.$idFiscaleInvianteCodice.'_'.$prefix.$progressivoInvio.'.xml';
         }
