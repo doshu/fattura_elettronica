@@ -11,13 +11,13 @@
 
         protected $_children = [
             'idFiscaleIVA',
-            'anagrafica',
-            'regimeFiscale',
             'codiceFiscale',
+            'anagrafica',
             'alboProfessionale',
             'provinciaAlbo',
             'numeroIscrizioneAlbo',
-            'dataIscrizioneAlbo'
+            'dataIscrizioneAlbo',
+            'regimeFiscale',
         ];
 
         public function __construct(Anagrafica $anagrafica, $regimeFiscale) {
@@ -40,6 +40,9 @@
             return $this;
         }
 
+        /**
+         * @Filter(type="uppercase")
+         */
         public function setCodiceFiscale($codiceFiscale) {
             parent::setCodiceFiscale($codiceFiscale);
             return $this;

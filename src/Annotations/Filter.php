@@ -20,6 +20,8 @@
                     break;
                 case 'decimal':
                     return $this->_parseDecimal($value);
+                case 'uppercase':
+                    return strtoupper($value);
                 default:
                     return $value;
             }

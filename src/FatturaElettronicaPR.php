@@ -128,7 +128,7 @@
             return [];
         }
 
-        public function getFilename() {
+        public function getFilename($prefix = null) {
             $idFiscaleInviantePaese = $this->_header->getDatiTrasmissione()
                 ->getIdTrasmittente()
                 ->getIdPaese();
@@ -138,7 +138,7 @@
             $progressivoInvio = $this->_header->getDatiTrasmissione()
                 ->getProgressivoInvio();
             
-            return $idFiscaleInviantePaese.$idFiscaleInvianteCodice.'_'.$progressivoInvio.'.xml';
+            return $idFiscaleInviantePaese.$idFiscaleInvianteCodice.'_'.$prefix.$progressivoInvio.'.xml';
         }
 
         protected function _getSchemaFilename() {
