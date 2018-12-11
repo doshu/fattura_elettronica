@@ -20,8 +20,7 @@
             'dataIscrizioneAlbo'
         ];
 
-        public function __construct(?IdFiscaleIVA $idFiscaleIva, Anagrafica $anagrafica, $regimeFiscale) {
-            $this->setIdFiscaleIVA($idFiscaleIva);
+        public function __construct(Anagrafica $anagrafica, $regimeFiscale) {
             $this->setAnagrafica($anagrafica);
             $this->setRegimeFiscale($regimeFiscale);
         }
