@@ -4,40 +4,40 @@
     
     class RegimeFiscale {
         
-        public const ORDINARIO = "RF01";
+        const ORDINARIO = "RF01";
         
-        public const CONTRIBUENTI_MINIMI = "RF02";
+        const CONTRIBUENTI_MINIMI = "RF02";
         
-        public const AGRICOLTURA_E_ATTIVITA_CONNESSE_E_PESCA = "RF04";
+        const AGRICOLTURA_E_ATTIVITA_CONNESSE_E_PESCA = "RF04";
         
-        public const VENDITA_SALI_E_TABACCHI = "RF05";
+        const VENDITA_SALI_E_TABACCHI = "RF05";
         
-        public const COMMERCIO_FIAMMIFERI = "RF06";
+        const COMMERCIO_FIAMMIFERI = "RF06";
         
-        public const EDITORIA = "RF07";
+        const EDITORIA = "RF07";
         
-        public const GESTIONE_SERVIZI_TELEFONIA_PUBBLICA = "RF08";
+        const GESTIONE_SERVIZI_TELEFONIA_PUBBLICA = "RF08";
         
-        public const RIVENDITA_DOCUMENTI_DI_TRASPORTO_PUBBLICO_E_DI_SOSTA = "RF09";
+        const RIVENDITA_DOCUMENTI_DI_TRASPORTO_PUBBLICO_E_DI_SOSTA = "RF09";
         
-        public const INTRATTENIMENTI_GIOCHI_E_ATTIVITA_TARIFFA_DPR_640_72 = "RF10";
+        const INTRATTENIMENTI_GIOCHI_E_ATTIVITA_TARIFFA_DPR_640_72 = "RF10";
         
-        public const AGENZIE_VIAGGI_E_TURISMO = "RF11";
+        const AGENZIE_VIAGGI_E_TURISMO = "RF11";
         
-        public const AGRITURISMO = "RF12";
+        const AGRITURISMO = "RF12";
         
-        public const VENDITE_A_DOMICILIO = "RF13";
+        const VENDITE_A_DOMICILIO = "RF13";
         
-        public const RIVENDITA_BENI_USATI_ARTE_ANTIQUARIATO = "RF14";
+        const RIVENDITA_BENI_USATI_ARTE_ANTIQUARIATO = "RF14";
         
-        public const AGENZIE_VENDITE_ALL_ASTA_ARTE_ANTIQUARIATO = "RF15";
+        const AGENZIE_VENDITE_ALL_ASTA_ARTE_ANTIQUARIATO = "RF15";
         
-        public const IVA_PER_CASSA_PA = "RF16";
+        const IVA_PER_CASSA_PA = "RF16";
         
-        public const IVA_PER_CASSA = "RF17";
+        const IVA_PER_CASSA = "RF17";
         
-        public const ALTRO = "RF18";
+        const ALTRO = "RF18";
         
-        public const REGIME_FORFETTARIO = "RF19";
+        const REGIME_FORFETTARIO = "RF19";
     }
 ?>

@@ -10,7 +10,7 @@
         protected $_type = null;
 
         public function __construct($args) {
-            $this->_type = $args['type'] ?? null;
+            $this->_type = isset($args['type'])?$args['type']:null;
         }
 
         public function handle($value) {

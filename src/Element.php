@@ -17,13 +17,13 @@
             if(preg_match('/^get(.*)$/', $name, $matches)) {
                 if(isset($matches[1]) && !empty(trim($matches[1]))) {
                     $key = Inflector::underscore(trim($matches[1]));
-                    return $this->_data[$key] ?? null;
+                    return isset($this->_data[$key])?$this->_data[$key]:null;
                 }
             }
             if(preg_match('/^set(.*)$/', $name, $matches)) {
                 if(isset($matches[1]) && !empty(trim($matches[1]))) {
                     $key = Inflector::underscore(trim($matches[1]));
-                    $this->_set($key, ($arguments[0] ?? null), $name);
+                    $this->_set($key, (isset($arguments[0])?$arguments[0]:null), $name);
                     //$this->_data[$key] = ($arguments[0] ?? null);
                     return null;
                 }
@@ -31,7 +31,7 @@
             if(preg_match('/^add(.*)$/', $name, $matches)) {
                 if(isset($matches[1]) && !empty(trim($matches[1]))) {
                     $key = Inflector::underscore(trim($matches[1]));
-                    $this->_append($key, ($arguments[0] ?? null), $name);
+                    $this->_append($key, (isset($arguments[0])?$arguments[0]:null), $name);
                     //$this->_data[$key][] = ($arguments[0] ?? null);
                     return null;
                 }
@@ -118,7 +118,7 @@
             }
             else {
                 if($value instanceof \DateTimeInterface) {
-                    $value = $value->format($this->_dates[$name] ?? 'Y-m-d');
+                    $value = $value->format(isset($this->_dates[$name])?$this->_dates[$name]:'Y-m-d');
                 }
                 elseif(is_double($value)) {
                     $value = number_format($value, 2);

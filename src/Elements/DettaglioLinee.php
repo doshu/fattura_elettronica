@@ -9,13 +9,13 @@
 
         protected $_name = "DettaglioLinee";
         
-        public const TIPO_SCONTO = "SC";
+        const TIPO_SCONTO = "SC";
         
-        public const TIPO_PREMIO = "PR";
+        const TIPO_PREMIO = "PR";
         
-        public const TIPO_ABBUONO = "AB";
+        const TIPO_ABBUONO = "AB";
         
-        public const TIPO_SPESA_ACCESSORIA = "AC";
+        const TIPO_SPESA_ACCESSORIA = "AC";
 
         protected $_children = [
             'numeroLinea',

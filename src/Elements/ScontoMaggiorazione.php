@@ -9,9 +9,9 @@
 
         protected $_name = "ScontoMaggiorazione";
         
-        public const TIPO_SCONTO = 'SC';
+        const TIPO_SCONTO = 'SC';
         
-        public const TIPO_MAGGIORAZIONE = 'MG';
+        const TIPO_MAGGIORAZIONE = 'MG';
 
         protected $_children = [
             'tipo',
