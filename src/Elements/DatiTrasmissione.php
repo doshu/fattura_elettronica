@@ -43,6 +43,9 @@
             return $this;
         }
 
+        /**
+         * @Filter(type="uppercase")
+         */
         public function setCodiceDestinatario($codiceDestinatario) {
             parent::setCodiceDestinatario($codiceDestinatario);
             return $this;
