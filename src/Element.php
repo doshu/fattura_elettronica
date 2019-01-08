@@ -118,12 +118,18 @@
             }
             else {
                 if($value instanceof \DateTimeInterface) {
-                    $value = $value->format($this->_dates[$name] ?? 'Y-m-d');
+                    $value = $dom->createElement($name, $value->format($this->_dates[$name] ?? 'Y-m-d'));
                 }
                 elseif(is_double($value)) {
-                    $value = number_format($value, 2);
+                    $value = $dom->createElement($name, number_format($value, 2));
                 }
-                $element->appendChild($dom->createElement($name, $value));
+				else {
+					$text = $dom->createTextNode($value);
+					$value = $dom->createElement($name);
+					$value->appendChild($text);
+				}
+				
+                $element->appendChild($value);
             }
         }
 
