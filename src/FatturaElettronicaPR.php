@@ -32,6 +32,14 @@
         public static function init() {
             AnnotationRegistry::registerLoader(spl_autoload_functions()[0]);
         }
+        
+        public function getBody() {
+            return $this->_body;
+        }
+        
+        public function getHeader() {
+            return $this->_header;
+        }
 
         public function setDatiTrasmissione(Elements\DatiTrasmissione $datiTrasmissione) {
             $this->_header->setDatiTrasmissione($datiTrasmissione);
