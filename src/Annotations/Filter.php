@@ -8,18 +8,20 @@
     class Filter
     {
         protected $_type = null;
+        protected $_options = [];
 
         public function __construct($args) {
             $this->_type = isset($args['type'])?$args['type']:null;
+            $this->_options = isset($args['options'])?$args['options']:null;
         }
 
         public function handle($value) {
             switch($this->_type) {
                 case 'normalizedString':
-                    return $this->_parseNormalizedString($value);
+                    return $this->_parseNormalizedString($value, $this->_options);
                     break;
                 case 'decimal':
-                    return $this->_parseDecimal($value);
+                    return $this->_parseDecimal($value, $this->_options);
                 case 'uppercase':
                     return strtoupper($value);
                 default:
@@ -27,11 +29,11 @@
             }
         }
 
-        protected function _parseNormalizedString($value) {
+        protected function _parseNormalizedString($value, $options = []) {
             return str_replace(["\n", "\t", "\r"], "", $value);
         }
 
-        protected function _parseDecimal($value) {
-            return number_format($value, 2, '.', '');
+        protected function _parseDecimal($value, $options = []) {
+            return number_format($value, isset($options['decimal'])?$options['decimal']:2, '.', '');
         }
     }

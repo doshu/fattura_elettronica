@@ -58,7 +58,7 @@
         }
 
         /**
-         * @Filter(type="decimal")
+         * @Filter(type="decimal", options={"decimal":8})
          */
         public function setPrezzoUnitario($prezzoUnitario) {
             parent::setPrezzoUnitario($prezzoUnitario);
