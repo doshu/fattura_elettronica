@@ -66,7 +66,7 @@
         }
 
         /**
-         * @Filter(type="decimal")
+         * @Filter(type="decimal", options={"decimal":8})
          */
         public function setPrezzoTotale($prezzoTotale) {
             parent::setPrezzoTotale($prezzoTotale);
