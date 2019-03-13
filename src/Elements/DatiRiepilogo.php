@@ -64,7 +64,7 @@
         }
 
         /**
-         * @Filter(type="decimal")
+         * @Filter(type="decimal", options={"decimal":8})
          */
         public function setArrotondamento($arrotondamento) {
             parent::setArrotondamento($arrotondamento);
