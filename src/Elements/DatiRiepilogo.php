@@ -35,7 +35,7 @@
         }
 
         /**
-         * @Filter(type="decimal", options={"decimal":8})
+         * @Filter(type="decimal")
          */
         public function setImponibileImporto($imponibileImporto) {
             parent::setImponibileImporto($imponibileImporto);
@@ -43,7 +43,7 @@
         }
 
         /**
-         * @Filter(type="decimal", options={"decimal":8})
+         * @Filter(type="decimal")
          */
         public function setImposta($imposta) {
             parent::setImposta($imposta);
