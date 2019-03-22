@@ -92,7 +92,7 @@
         }
 
         /**
-         * @Filter(type="decimal")
+         * @Filter(type="decimal", options={"decimal":8})
          */
         public function setQuantita($quantita) {
             parent::setQuantita($quantita);
